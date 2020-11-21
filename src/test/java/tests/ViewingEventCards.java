@@ -4,23 +4,16 @@ import org.junit.jupiter.api.Test;
 import pages.EventsPage;
 import pages.MainPage;
 import utils.BaseHooks;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class ViewUpcomingEvents extends BaseHooks {
-
+public class ViewingEventCards extends BaseHooks {
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
 
     @Test
-    public void viewUpcomingEventsTest() {
-
+    public void viewingEventCards() {
         mainPage.openPage();
         mainPage.goToEventsTab();
         eventsPage.clickUpcomingEvents();
-        eventsPage.checkNumberOfCards();
-
+        eventsPage.checkCardsContent();
     }
-
-
 }
