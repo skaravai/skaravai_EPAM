@@ -3,22 +3,20 @@ package tests;
 import org.junit.jupiter.api.Test;
 import pages.EventsPage;
 import pages.MainPage;
+import pages.SelectedEventPage;
 import utils.BaseHooks;
 
-public class ViewUpcomingEvents extends BaseHooks {
-
+public class ViewingEventDetails extends BaseHooks {
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
+    SelectedEventPage selectedEventPage = new SelectedEventPage();
 
     @Test
-    public void viewUpcomingEventsTest() {
+    public void viewingEventDetails() {
 
         mainPage.openPage();
         mainPage.goToEventsTab();
-        eventsPage.clickUpcomingEvents();
-        eventsPage.checkNumberOfCards();
-
+        eventsPage.clickEventCard();
+        selectedEventPage.checkElements();
     }
-
-
 }

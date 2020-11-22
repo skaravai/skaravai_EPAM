@@ -5,7 +5,7 @@ import pages.EventsPage;
 import pages.MainPage;
 import utils.BaseHooks;
 
-public class ViewUpcomingEvents extends BaseHooks {
+public class ViewPastEvents extends BaseHooks {
 
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
@@ -15,10 +15,9 @@ public class ViewUpcomingEvents extends BaseHooks {
 
         mainPage.openPage();
         mainPage.goToEventsTab();
-        eventsPage.clickUpcomingEvents();
-        eventsPage.checkNumberOfCards();
-
+        eventsPage.clickPastEvents();
+        eventsPage.chooseCanadaLocation();
+        eventsPage.checkNumberOfPastCards();
     }
-
 
 }
