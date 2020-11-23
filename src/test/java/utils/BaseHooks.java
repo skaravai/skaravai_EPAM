@@ -27,10 +27,10 @@ public class BaseHooks {
         return driver;
     }
 
-    @AfterAll
-    public static void teardown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterAll
+//    public static void teardown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }

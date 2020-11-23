@@ -26,7 +26,6 @@ public class MainPage extends AbstractPage {
 
     public void goToVideoTab() {
         videoNav.click();
-
     }
 
 }
