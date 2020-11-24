@@ -4,7 +4,6 @@ import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 

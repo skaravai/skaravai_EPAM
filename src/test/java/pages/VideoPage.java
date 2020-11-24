@@ -1,6 +1,5 @@
 package pages;
 
-import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +11,8 @@ public class VideoPage extends AbstractPage{
         super();
     }
 
-    @FindBy (xpath = "//*[contains(text(),'More Filters')]")
+    ////*[contains(text(),'More Filters')]
+    @FindBy (xpath = "[href = '#collapseMoreFilters']")
     public WebElement moreFiltersBtn;
 
     @FindBy (css = "#filter_category")
