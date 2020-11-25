@@ -1,11 +1,14 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import pages.EventsPage;
 import pages.MainPage;
 import utils.BaseHooks;
 
-public class ViewUpcomingEvents extends BaseHooks {
+@Execution(ExecutionMode.CONCURRENT)
+public class ViewUpcomingEventsTest extends BaseHooks {
 
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
@@ -19,6 +22,5 @@ public class ViewUpcomingEvents extends BaseHooks {
         eventsPage.checkNumberOfCards();
 
     }
-
 
 }

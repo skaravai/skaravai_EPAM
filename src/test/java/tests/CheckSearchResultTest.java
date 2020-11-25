@@ -1,11 +1,14 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import pages.MainPage;
 import pages.VideoPage;
 import utils.BaseHooks;
 
-public class CheckSearchResult extends BaseHooks {
+@Execution(ExecutionMode.CONCURRENT)
+public class CheckSearchResultTest extends BaseHooks {
     MainPage mainPage = new MainPage();
     VideoPage videoPage = new VideoPage();
 

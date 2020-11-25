@@ -59,3 +59,45 @@
 2020-11-24 22:03:53,775 INFO t.ViewUpcomingEvents [main] Открыта страница events.epam.com
 2020-11-24 22:11:02,283 INFO t.ViewUpcomingEvents [main] Открыта страница events.epam.com
 2020-11-24 22:13:00,896 INFO t.ViewUpcomingEvents [main] Открыта страница events.epam.com
+2020-11-25 17:18:27,721 INFO t.ViewUpcomingEvents [main] Открыта страница events.epam.com
+2020-11-25 17:18:29,139 INFO t.ViewUpcomingEvents [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:42:39,825 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:42:41,617 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:44:29,761 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:44:34,697 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:44:40,018 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:44:44,051 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:44:52,507 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:44:54,815 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:45:03,503 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:45:09,070 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:45:17,878 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:45:47,784 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:46:56,615 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:46:58,653 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:47:14,169 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:47:16,548 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:47:49,302 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:48:05,544 INFO t.ViewUpcomingEventsTest [main] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:48:27,636 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:48:41,450 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:49:18,875 INFO t.ViewUpcomingEventsTest [main] Открыта страница events.epam.com
+2020-11-25 18:51:06,999 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:51:08,860 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:51:21,054 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:51:24,783 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:51:38,255 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:51:40,426 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:51:56,070 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:51:58,799 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:52:16,456 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:52:30,365 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:53:55,653 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-3] Открыта страница events.epam.com
+2020-11-25 18:53:57,760 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-15] Открыта страница events.epam.com
+2020-11-25 18:53:59,131 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-9] Открыта страница events.epam.com
+2020-11-25 18:54:00,468 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-7] Открыта страница events.epam.com
+2020-11-25 18:54:01,597 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-13] Открыта страница events.epam.com
+2020-11-25 18:54:03,824 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-13] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 18:54:15,143 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-5] Открыта страница events.epam.com
+2020-11-25 18:54:17,010 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-5] Переход на вкладку Events https://events.epam.com/events
+2020-11-25 21:28:55,021 INFO t.ViewUpcomingEventsTest [ForkJoinPool-1-worker-15] Открыта страница events.epam.com

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import tests.ViewUpcomingEvents;
+import tests.ViewUpcomingEventsTest;
 import utils.BaseHooks;
 
 public class AbstractPage {
@@ -20,7 +20,7 @@ public class AbstractPage {
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), this);
     }
 
-    public Logger logger = LogManager.getLogger(ViewUpcomingEvents.class);
+    public Logger logger = LogManager.getLogger(ViewUpcomingEventsTest.class);
 
     public void waitingForAnItemToDisappear(String locator) {
         WebDriverWait webDriverWait = new WebDriverWait(driver, 10);

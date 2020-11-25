@@ -1,10 +1,13 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import pages.EventsPage;
 import pages.MainPage;
 
-public class DateValidation {
+@Execution(ExecutionMode.CONCURRENT)
+public class DateValidationTest {
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
 

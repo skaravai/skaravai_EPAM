@@ -1,11 +1,14 @@
 package tests;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import pages.EventsPage;
 import pages.MainPage;
 import utils.BaseHooks;
 
-public class ViewPastEvents extends BaseHooks {
+@Execution(ExecutionMode.CONCURRENT)
+public class ViewPastEventsTest extends BaseHooks {
 
     MainPage mainPage = new MainPage();
     EventsPage eventsPage = new EventsPage();
