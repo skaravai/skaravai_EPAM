@@ -21,6 +21,6 @@ public class ViewPastEventsTest extends BaseHooks {
         eventsPage.clickPastEvents();
         eventsPage.chooseCanadaLocation();
         eventsPage.checkNumberOfPastCards();
-    }
 
+    }
 }

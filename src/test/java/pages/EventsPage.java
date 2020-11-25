@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class EventsPage extends AbstractPage{
     public EventsPage() {
@@ -47,6 +49,14 @@ public class EventsPage extends AbstractPage{
     @FindBy (css = "div[class='evnt-events-column cell-3']")
     public List<WebElement> eventCard;
 
+    @FindBy (xpath = "(//*[@class='evnt-events-row'])[1]/div[@class='evnt-events-column cell-3']")
+    public List<WebElement> eventThisWeek;
+
+    @FindBy (xpath = "//h3[contains(text(),'This week')]")
+    public WebElement thisWeekEvents;
+
+    @FindBy (css= "[class='evnt-dates-cell dates'] span[class='date']")
+    public List<WebElement> dateEventsThisWeek;
 
     public void clickUpcomingEvents() {upcomingEventsTab.click(); }
 
@@ -56,14 +66,12 @@ public class EventsPage extends AbstractPage{
     }
 
     public void checkCardsContent() {
-
-        for (int i = 0; i < numberOfEventCards.size(); i++) {
+        for (int i = 0; i <= numberOfEventCards.size(); i++) {
             assertions.assertThat(cardBody.get(i).isDisplayed()).isTrue();
             assertions.assertThat(cardHeader.get(i).isDisplayed()).isTrue();
             assertions.assertThat(cardFooter.get(i).isDisplayed()).isTrue();
             assertions.assertAll();
         }
-
     }
 
     public void clickPastEvents() {
@@ -84,5 +92,25 @@ public class EventsPage extends AbstractPage{
 
     public void clickEventCard() {
         eventCard.get(1).click();
+    }
+
+    public void checkThisWeekEvents() {
+        Assertions.assertTrue(thisWeekEvents.isDisplayed(), "No events this week");
+    }
+
+    public void checkValidationsDate() {
+        Calendar calendar = GregorianCalendar.getInstance();
+        DateFormat df = new SimpleDateFormat("dd MMM yyyy", Locale.ENGLISH);
+        df.setTimeZone(TimeZone.getTimeZone("GMT"));
+        String startDate = df.format(calendar.getTime());
+        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
+        String endDate = df.format(calendar.getTime());
+        for (int i = 0; i < eventThisWeek.size(); i++) {
+            if (endDate.compareTo(dateEventsThisWeek.get(i).getText()) < 7) {
+                System.out.println("Дата мероприятия");
+            } else {
+                Assertions.fail("Дата не совпадает");
+            }
+        }
     }
 }

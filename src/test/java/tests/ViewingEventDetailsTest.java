@@ -21,5 +21,6 @@ public class ViewingEventDetailsTest extends BaseHooks {
         mainPage.goToEventsTab();
         eventsPage.clickEventCard();
         selectedEventPage.checkElements();
+
     }
 }

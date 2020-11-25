@@ -14,8 +14,10 @@ public class FilteringVideoTest extends BaseHooks {
 
     @Test
     public void filteringVideo() {
+
         mainPage.openPage();
         mainPage.goToVideoTab();
         videoPage.findEvents();
+
     }
 }

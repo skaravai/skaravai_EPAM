@@ -3,6 +3,7 @@ package pages;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,10 +34,10 @@ public class AbstractPage {
             logger.info("Элемент не отобразился");
         }
     }
-//    public void checkIsDisplayedElement(WebElement element) {
-//        (new WebDriverWait(driver, 10))
-//                .until(ExpectedConditions
-//                        .elementToBeClickable(element));
-//        Assertions.assertTrue(element.isDisplayed(),"This element is not displayed");
-//    }
+
+    public void moveToElement(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element);
+        actions.perform();
+    }
 }

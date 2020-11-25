@@ -14,9 +14,11 @@ public class ViewingEventCardsTest extends BaseHooks {
 
     @Test
     public void viewingEventCards() {
+
         mainPage.openPage();
         mainPage.goToEventsTab();
         eventsPage.clickUpcomingEvents();
         eventsPage.checkCardsContent();
+
     }
 }

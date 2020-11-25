@@ -11,14 +11,13 @@ public class VideoPage extends AbstractPage{
         super();
     }
 
-    ////*[contains(text(),'More Filters')]
-    @FindBy (xpath = "[href = '#collapseMoreFilters']")
+    @FindBy (css = "[href = '#collapseMoreFilters']")
     public WebElement moreFiltersBtn;
 
     @FindBy (css = "#filter_category")
     public WebElement categoryFilterBtn;
 
-    @FindBy (css = "#filter_language")
+    @FindBy (css = "#filter_location")
     public WebElement categoryLocationBtn;
 
     @FindBy (css = "#filter_language")
@@ -50,6 +49,7 @@ public class VideoPage extends AbstractPage{
     public void findEvents () {
         moreFiltersBtn.click();
         categoryFilterBtn.click();
+        moveToElement(categoryTesting);
         categoryTesting.click();
         categoryFilterBtn.click();
 
@@ -73,7 +73,5 @@ public class VideoPage extends AbstractPage{
             Assertions.assertTrue(event.getText().contains("QA"), "Name doesn't contain QA word");
         }
     }
-
-
 
 }

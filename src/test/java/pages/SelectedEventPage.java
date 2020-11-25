@@ -20,13 +20,10 @@ public class SelectedEventPage extends AbstractPage {
     public WebElement eventProgram;
 
     public void checkElements () {
+
         registerBtn.isDisplayed();
         dateBlock.get(1).isDisplayed();
         eventProgram.isDisplayed();
+
     }
-
-
-
-
-
 }

@@ -22,5 +22,4 @@ public class ViewUpcomingEventsTest extends BaseHooks {
         eventsPage.checkNumberOfCards();
 
     }
-
 }

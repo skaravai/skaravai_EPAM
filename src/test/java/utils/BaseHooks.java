@@ -3,7 +3,6 @@ package utils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -52,6 +51,7 @@ public class BaseHooks {
                 caps.setVersion("78.0");
                 caps.setCapability("enableVNC", true);
                 caps.setCapability("screenResolution", "1280x1024");
+                caps.setCapability("enableVideo", true);
                 try {
                     driver = new RemoteWebDriver(new URL(selenoidUrl), caps);
                 } catch (MalformedURLException e) {

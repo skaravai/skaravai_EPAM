@@ -14,9 +14,11 @@ public class CheckSearchResultTest extends BaseHooks {
 
     @Test
     public void checkSearchResult() {
+
         mainPage.openPage();
         mainPage.goToVideoTab();
         videoPage.searchEvents();
         videoPage.checkEvents();
+
     }
 }
